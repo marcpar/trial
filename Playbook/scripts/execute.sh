@@ -6,6 +6,6 @@ JSON=$(curl -i -H "Accept: application/json" https://drive.google.com/open?id=1f
 
 
 
-TRIAL_ACCOUNTS = test.json | jq -c '.organzations[] | select( (.plan_id == "trial") )' 
+TRIAL_ACCOUNTS = $(cat test.json | jq -r '.organzations[] | select( (.status == "in_trial") and .plan_id == "trial" and ."days-remaining-trial" > 0)')
 ##
 ##    curl -X POST -H 'Content-type: application/json' --data '{"text": $TRIAL_ACCOUNTS}' webhookurl

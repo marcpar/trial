@@ -32,13 +32,39 @@ If you have to do the same as in task 2 but with some linux command line tools, 
 under playbook i created an script/execute.sh
 
 ```bash
- marcpar@Marcs-MacBook-Pro   ~/workspace/exam/norway/Playbook/scripts  cat test.json | jq -c '.organzations[] | select( (.plan_id == "trial") )'                                
+marcpar@Marcs-MacBook-Pro   ~/workspace/exam/norway     master  cat test.json | jq -r '.organzations[] | select( (.status == "in_trial") and .plan_id == "trial" and ."days-remaining-trial" > 0)'
 
 
-{"disposable":false,"name":"testeroony","created":"2019-08-09T15:16:33.151Z","status":"in_trial","label":"testeroony","plan_id":"trial","members":1,"days-remaining-trial":7}
-{"disposable":true,"name":"tttttttttttttttttesttttttttttttttttt","created":"2019-07-06T07:50:53.474Z","status":"non_renewing","label":"tttttttttttttttttesttttttttttt","plan_id":"trial","members":1,"days-remaining-trial":null}
-{"disposable":false,"name":"unknown","created":"2019-11-04T13:01:06.633Z","status":"in_trial","label":"unknown","plan_id":"trial","members":1,"days-remaining-trial":20}
-{"disposable":false,"name":"天天平台全新改版-琎151880。c0M找客服首忡100宋38金~","created":"2019-10-25T11:26:09.884Z","status":"in_trial","label":"151880c0m10038","plan_id":"trial","members":1,"days-remaining-trial":9}
+{
+  "disposable": false,
+  "name": "testeroony",
+  "created": "2019-08-09T15:16:33.151Z",
+  "status": "in_trial",
+  "label": "testeroony",
+  "plan_id": "trial",
+  "members": 1,
+  "days-remaining-trial": 7
+}
+{
+  "disposable": false,
+  "name": "unknown",
+  "created": "2019-11-04T13:01:06.633Z",
+  "status": "in_trial",
+  "label": "unknown",
+  "plan_id": "trial",
+  "members": 1,
+  "days-remaining-trial": 20
+}
+{
+  "disposable": false,
+  "name": "天天平台全新改版-琎151880。c0M找客服首忡100宋38金~",
+  "created": "2019-10-25T11:26:09.884Z",
+  "status": "in_trial",
+  "label": "151880c0m10038",
+  "plan_id": "trial",
+  "members": 1,
+  "days-remaining-trial": 9
+}
 ```
 
 
