@@ -21,6 +21,8 @@ Can you write an ansible playbook to get the file from the link and send one sla
 
 for ansible I would use this:
 
+Organzation in the test.json is misspelled 
+
 https://docs.ansible.com/ansible/latest/modules/slack_module.html
 
 ## 3
