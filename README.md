@@ -1,7 +1,7 @@
 #EXAM
 
 ## 1
-#### 1.  You have the following file content https://drive.google.com/open?id=18CkmWcXXlZZdJdzeVS8XIFgyuuf6EOcr
+You have the following file content https://drive.google.com/open?id=18CkmWcXXlZZdJdzeVS8XIFgyuuf6EOcr
 
 Ans:
 I created a bashscript timefinder.sh can be executed by crobjob
@@ -16,7 +16,7 @@ in line 16
 
 
 ## 2
-#### 2. You have the test.json file url. https://drive.google.com/open?id=1fQPNwD65XdbI3iu7ujCppxN7NWv9NUKL
+You have the test.json file url. https://drive.google.com/open?id=1fQPNwD65XdbI3iu7ujCppxN7NWv9NUKL
 Can you write an ansible playbook to get the file from the link and send one slack message with all the labels of the organizations:
 
 for ansible I would use this:
@@ -26,7 +26,7 @@ Organzation in the test.json is misspelled
 https://docs.ansible.com/ansible/latest/modules/slack_module.html
 
 ## 3
-#### 3. 
+
 If you have to do the same as in task 2 but with some linux command line tools, how would you approach this?s
 
 under playbook i created an script/execute.sh
