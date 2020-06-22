@@ -1,0 +1,7 @@
+#Playbook
+- 
+    name: Play 1
+    hosts: localhost
+    tasks:
+        - name: Send slack message 
+          script: scripts/execute.sh
