@@ -8,4 +8,4 @@ JSON=$(curl -i -H "Accept: application/json" https://drive.google.com/open?id=1f
 
 TRIAL_ACCOUNTS = test.json | jq -c '.organzations[] | select( (.plan_id == "trial") )' 
 ##
-#curl 
+##    curl -X POST -H 'Content-type: application/json' --data '{"text": $TRIAL_ACCOUNTS}' webhookurl
