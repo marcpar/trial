@@ -6,6 +6,19 @@ You have the following file content https://drive.google.com/open?id=18CkmWcXXlZ
 Ans:
 I created a bashscript timefinder.sh can be executed by crobjob
 
+How to use
+
+```
+chmod +x timefinder.sh
+
+./timefinder.sh  daemonEND.data
+
+sudo crontab -e 
+
+
+```
+
+
 please change webhook url 
 
 in line 16
