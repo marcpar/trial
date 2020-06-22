@@ -45,7 +45,7 @@ If you have to do the same as in task 2 but with some linux command line tools, 
 under playbook i created an script/execute.sh
 
 ```bash
-marcpar@Marcs-MacBook-Pro   ~/workspace/exam/norway     master  cat test.json | jq -r '.organzations[] | select( (.status == "in_trial") and .plan_id == "trial" and ."days-remaining-trial" > 0)'
+marcpar@Marcs-MacBook-Pro   ~/workspace     master  cat test.json | jq -r '.organzations[] | select( (.status == "in_trial") and .plan_id == "trial" and ."days-remaining-trial" > 0)'
 
 
 {
